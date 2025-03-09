@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Interactive Sheet Music Editor</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Interactive Sheet Music Editor</h1>
+  
+  <div id="controls">
+    <select id="note-duration">
+      <option value="w">Whole Note</option>
+      <option value="h">Half Note</option>
+      <option value="q" selected>Quarter Note</option>
+      <option value="8">Eighth Note</option>
+      <option value="16">Sixteenth Note</option>
+    </select>
+    <button id="reset-btn">Reset Measure</button>
+  </div>
+  
+  <div id="output"></div>
+  
+  <p>Click on the staff to add notes. Use the dropdown menu to select note duration.</p>
+  
+  <!-- Load library -->
+  <script src="https://cdn.jsdelivr.net/npm/vexflow@5.0.0-alpha.4/build/cjs/vexflow-core.js"></script>
+  
+  <!-- Main script -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
